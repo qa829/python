@@ -1,0 +1,22 @@
+arch:
+- arm64
+- s390x
+- ppc64le
+
+language: python
+python:
+  - "3.8"
+  - "3.7"
+  - "3.6"
+  - "3.5"
+  - "2.7"
+
+install: skip
+script:
+- python -V
+#- python ./src/hello.py
+matrix:
+  include:
+    - name: xenial
+    - dist: bionic
+      name: bionic
