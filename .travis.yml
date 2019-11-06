@@ -21,5 +21,6 @@ script:
 matrix:
   include:
     - name: xenial
+      name: xenial
     - dist: bionic
       name: bionic
